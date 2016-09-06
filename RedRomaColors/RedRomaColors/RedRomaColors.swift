@@ -13,17 +13,19 @@ import UIKit
 public class RedRomaColors
 {
     //MARK: Blacks
+    public static let blackPrimary: UIColor = Colors.fromRGB(red: 27, green: 32, blue: 33)
+    public static let blackAccent: UIColor = Colors.fromRGB(red: 166, green: 118, blue: 100)
+    public static let fullyBlack = Colors.fromRGB(red: 0, green: 0, blue: 0)
     
     //MARK: Reds
     public static let redPrimary: UIColor = Colors.fromRGB(red: 251, green: 62, blue: 60)
-    public static let blackPrimary: UIColor = Colors.fromRGB(red: 27, green: 32, blue: 33)
-    public static let blackAccent: UIColor = Colors.fromRGB(red: 166, green: 118, blue: 100)
+
     
     //MARK: Purples
     
     
     //MARK: Others
-    public static let black = Colors.fromRGB(red: 0, green: 0, blue: 0)
+    
     public static let blue = Colors.fromRGB(red: 3, green: 122, blue: 255)
     public static let green = Colors.fromRGB(red: 0, green: 166, blue: 118)
     public static let maroon = Colors.fromRGB(red: 100, green: 6, blue: 17)

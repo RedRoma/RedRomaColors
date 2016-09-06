@@ -11,7 +11,6 @@
 		DE0EFFE91D7E86D000B70D62 /* RedRomaColors.h in Headers */ = {isa = PBXBuildFile; fileRef = DE0EFFE71D7E86D000B70D62 /* RedRomaColors.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DE0EFFF01D7E86DD00B70D62 /* RedRomaColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0EFFEF1D7E86DD00B70D62 /* RedRomaColors.swift */; };
 		DE0EFFF21D7E871300B70D62 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0EFFF11D7E871300B70D62 /* Colors.swift */; };
-		DE0EFFFA1D7E8C5000B70D62 /* RedRomaColorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0EFFF91D7E8C5000B70D62 /* RedRomaColorsTests.swift */; };
 		DE0EFFFC1D7E8C5000B70D62 /* RedRomaColors.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE0EFFE41D7E86D000B70D62 /* RedRomaColors.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,7 +32,6 @@
 		DE0EFFEF1D7E86DD00B70D62 /* RedRomaColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RedRomaColors.swift; sourceTree = "<group>"; };
 		DE0EFFF11D7E871300B70D62 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		DE0EFFF71D7E8C5000B70D62 /* RedRomaColorsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RedRomaColorsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DE0EFFF91D7E8C5000B70D62 /* RedRomaColorsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedRomaColorsTests.swift; sourceTree = "<group>"; };
 		DE0EFFFB1D7E8C5000B70D62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -88,7 +86,6 @@
 		DE0EFFF81D7E8C5000B70D62 /* RedRomaColorsTests */ = {
 			isa = PBXGroup;
 			children = (
-				DE0EFFF91D7E8C5000B70D62 /* RedRomaColorsTests.swift */,
 				DE0EFFFB1D7E8C5000B70D62 /* Info.plist */,
 				DE0E00021D7E8C6000B70D62 /* ColorsTest.swift */,
 			);
@@ -217,7 +214,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE0EFFFA1D7E8C5000B70D62 /* RedRomaColorsTests.swift in Sources */,
 				DE0E00031D7E8C6000B70D62 /* ColorsTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -416,6 +412,7 @@
 				DE0EFFEE1D7E86D000B70D62 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DE0EFFFF1D7E8C5000B70D62 /* Build configuration list for PBXNativeTarget "RedRomaColorsTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +421,7 @@
 				DE0E00011D7E8C5000B70D62 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
