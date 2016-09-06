@@ -1,2 +1,4 @@
-# RedRomaColors
-Swift Library containing all of the standard RedRoma colors for consistency.
+RedRomaColors
+=================
+
+This convenient Swift Library contains all of the standard RedRoma colors for consistency.
