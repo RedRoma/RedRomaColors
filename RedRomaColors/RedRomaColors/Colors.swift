@@ -62,6 +62,7 @@ public class Colors
             return nil
         }
         
+        //Remove the Hash symbol
         let hex = hexString.replacingOccurrences(of: "#", with: "")
         
         guard hex.characters.count == 6
