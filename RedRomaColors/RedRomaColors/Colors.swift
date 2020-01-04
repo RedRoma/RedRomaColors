@@ -3,56 +3,48 @@
 //  RedRomaColors
 //
 //  Created by Wellington Moreno on 9/5/16.
-//  Copyright © 2016 RedRoma, Inc. All rights reserved.
+//  Copyright © 2020 RedRoma, Inc. All rights reserved.
 //
 
 import Foundation
 import UIKit
 
-/**
-    This class is useful for creating Colors using RGB, RGBA, and HEX strings.
- */
+/// This class is useful for creating Colors using RGB, RGBA, and HEX strings.
 public class Colors
 {
     
-    /**
-        Create a color from an RGB color space. Color values are expected in the `0-255` space.
-     
-        - parameter red   : The `red` component, between `0...255`
-        - parameter green : The `green` component, between `0...255`
-        - parameter blue  : The `blue` component, between `0...255`
-     
-        - returns : The corresponding color
-    */
+
+    /// Create a color from an RGB color space. Color values are expected in the `0-255` space.
+    ///
+    /// - parameter red   : The `red` component, between `0...255`
+    /// - parameter green : The `green` component, between `0...255`
+    /// - parameter blue  : The `blue` component, between `0...255`
+    ///
+    /// - returns : The corresponding color
     public static func fromRGB(red: CGFloat, green: CGFloat, blue: CGFloat) -> UIColor
     {
         return fromRGBA(red: red, green: green, blue: blue, alpha: 100)
     }
-    
-    /**
-        Create a color from an RGBA color space. Colors values are expected in the `0...255` range.
-        Aplha values are expected as a percentage, in the `0...100`% range.
-     
-         - parameter red   : The `red` component, between `0...255`
-         - parameter green : The `green` component, between `0...255`
-         - parameter blue  : The `blue` component, between `0...255`
-         - parameter aplha: The `alpha`, or transparency component. It is expected as a percentage from `0...100`.
-         
-         - returns : The corresponding color
-     
-    */
+
+    /// Create a color from an RGBA color space. Colors values are expected in the `0...255` range.
+    /// Aplha values are expected as a percentage, in the `0...100`% range.
+    ///
+    ///  - parameter red   : The `red` component, between `0...255`
+    ///  - parameter green : The `green` component, between `0...255`
+    ///  - parameter blue  : The `blue` component, between `0...255`
+    ///  - parameter aplha: The `alpha`, or transparency component. It is expected as a percentage from `0...100`.
+    ///
+    ///  - returns : The corresponding color
     public static func fromRGBA(red: CGFloat, green: CGFloat, blue:CGFloat, alpha: CGFloat) -> UIColor
     {
         return UIColor(red: red/255, green: green/255, blue: blue/255, alpha: alpha/100)
     }
-    
-    /**
-        Create a color value using a Hexadecimal String. Color values are expect in the `"000000"..."FFFFFF"` range.
-     
-        - parameter hexString: The hex color string, for example, "`#740F91"`.
-     
-        - returns: The corresponding `UIColor`
-    */
+
+    /// Create a color value using a Hexadecimal String. Color values are expect in the `"000000"..."FFFFFF"` range.
+    ///
+    /// - parameter hexString: The hex color string, for example, "`#740F91"`.
+    ///
+    /// - returns: The corresponding `UIColor`
     public static func from(hexString: String) -> UIColor?
     {
         guard !hexString.isEmpty
@@ -65,7 +57,7 @@ public class Colors
         //Remove the Hash symbol
         let hex = hexString.replacingOccurrences(of: "#", with: "")
         
-        guard hex.characters.count == 6
+        guard hex.count == 6
         else
         {
             print("Hex must have 6 characters exactly")
@@ -98,7 +90,7 @@ public class Colors
         while (startIndex < string.endIndex && endIndex < string.endIndex)
         {
             let subString = string[startIndex...endIndex]
-            parts.append(subString)
+            parts.append(String(subString))
             
             startIndex = string.index(endIndex, offsetBy: 1)
             
@@ -116,7 +108,7 @@ public class Colors
         var exponent = 0
         var value: Int = 0
         
-        for hexCharacter in hexString.characters.reversed()
+        for hexCharacter in hexString.reversed()
         {
             let hexValue = toDecimal(hexLetter: hexCharacter)
             
