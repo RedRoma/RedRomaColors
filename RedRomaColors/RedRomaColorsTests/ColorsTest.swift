@@ -30,7 +30,7 @@ class ColorsTest: XCTestCase
         hex = "000000"
         result = Colors.from(hexString: hex)
         XCTAssertNotNil(result)
-        XCTAssertEqual(result, RedRomaColors.black)
+        XCTAssertEqual(result, RedRomaColors.fullyBlack)
         
     }
     
